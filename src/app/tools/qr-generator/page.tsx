@@ -21,15 +21,6 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";
 import { ArrowLeft, QrCode, Download } from "lucide-react";
-// import { generateSEOMetadata } from "@/components/seo-metadata"
-
-// export const metadata = generateSEOMetadata({
-//   title: "QR Code Generator",
-//   description:
-//     "Generate QR codes for text, URLs, contact info, and more. Free online QR code generator with customizable size and error correction.",
-//   keywords: "qr code generator, qr generator, qr code creator, barcode generator, qr code maker",
-//   canonical: "/tools/qr-generator",
-// })
 
 export default function QRGeneratorPage() {
 	const [text, setText] = useState("");
