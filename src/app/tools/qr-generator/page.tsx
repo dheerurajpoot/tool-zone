@@ -419,8 +419,8 @@ END:VCARD`,
 									<div className='text-center py-12 text-muted-foreground'>
 										<QrCode className='w-16 h-16 mx-auto mb-4 opacity-50' />
 										<p>
-											Enter text and click "Generate QR
-											Code" to create your QR code
+											Enter text and click &quot;Generate
+											QR Code&quot; to create your QR code
 										</p>
 									</div>
 								)}
