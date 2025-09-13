@@ -52,7 +52,34 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en' suppressHydrationWarning>
-			<head suppressHydrationWarning></head>
+			<head>
+				{/* Search Console Verification */}
+				<meta
+					name='google-site-verification'
+					content='YOUR_GOOGLE_SITE_VERIFICATION_CODE'
+				/>
+
+				{/* Google Analytics */}
+				<script
+					async
+					src='https://www.googletagmanager.com/gtag/js?id=YOUR_GOOGLE_ANALYTICS_ID'></script>
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `
+						window.dataLayer = window.dataLayer || [];
+						function gtag(){dataLayer.push(arguments);}
+						gtag('js', new Date());
+						gtag('config', 'YOUR_GOOGLE_ANALYTICS_ID');
+					`,
+					}}
+				/>
+
+				{/* Google AdSense */}
+				<script
+					async
+					src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=YOUR_GOOGLE_ADSENSE_ID'
+					crossOrigin='anonymous'></script>
+			</head>
 			<body
 				className={`font-sans ${montserrat.variable} ${openSans.variable} antialiased`}
 				suppressHydrationWarning>
