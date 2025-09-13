@@ -1,0 +1,32 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "ToolHub - Professional Online Tools",
+  "description": "Access 12+ professional online tools including calculators, converters, generators and more. Free tools for age calculation, EMI calculation, unit conversion, password generation, and much more.",
+  "url": "https://toolhub.vercel.app",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "ToolHub"
+  },
+  "featureList": [
+    "Age Calculator",
+    "EMI Calculator",
+    "AdSense Revenue Calculator",
+    "Percentage Calculator",
+    "Unit Converter",
+    "Base64 Encoder/Decoder",
+    "Word Counter",
+    "Case Converter",
+    "Password Generator",
+    "Random Number Generator",
+    "Color Picker",
+    "QR Code Generator"
+  ]
+}
