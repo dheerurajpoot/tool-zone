@@ -137,7 +137,7 @@ const Footer = () => {
 					</div>
 					<div className='border-t mt-8 pt-8 text-center'>
 						<p className='text-sm text-muted-foreground'>
-							© 2025 ToolHub. All rights reserved. Built with
+							© 2026 ToolHub. All rights reserved. Built with
 							precision and care.
 						</p>
 					</div>

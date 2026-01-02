@@ -42,7 +42,6 @@ export const metadata: Metadata = {
 		description:
 			"Access 10+ professional online tools including calculators, converters, generators and more.",
 	},
-	generator: "ToolHub",
 };
 
 export default function RootLayout({
