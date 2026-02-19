@@ -5,16 +5,17 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, MessageSquare, Clock, MapPin } from "lucide-react";
+import { SITE_NAME } from "@/lib/constant";
 
 export const metadata: Metadata = {
-	title: "Contact Us - Get Support | ToolHub",
+	title: `Contact Us - Get Support | ${SITE_NAME}`,
 	description:
-		"Contact ToolHub for support, feedback, or business inquiries. We're here to help with any questions about our online tools and calculators.",
-	keywords: "contact toolhub, support, feedback, business inquiries, help",
+		`Contact ${SITE_NAME} for support, feedback, or business inquiries. We're here to help with any questions about our online tools and calculators.`,
+	keywords: `contact ${SITE_NAME}, support, feedback, business inquiries, help`,
 	openGraph: {
-		title: "Contact ToolHub - Get Support",
+		title: `Contact ${SITE_NAME} - Get Support`,
 		description:
-			"Contact ToolHub for support, feedback, or business inquiries. We're here to help with any questions.",
+			`Contact ${SITE_NAME} for support, feedback, or business inquiries. We're here to help with any questions.`,
 		type: "website",
 	},
 };

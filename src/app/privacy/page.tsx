@@ -1,18 +1,13 @@
 import type { Metadata } from "next";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { SITE_EMAIL, SITE_NAME } from "@/lib/constant";
 
 export const metadata: Metadata = {
-	title: "Privacy Policy - ToolHub",
+	title: `Privacy Policy - ${SITE_NAME}`,
 	description:
-		"Read ToolHub's privacy policy to understand how we protect your data and privacy while using our online tools and calculators.",
+		`Read ${SITE_NAME}'s privacy policy to understand how we protect your data and privacy while using our online tools and calculators`,
 	keywords: "privacy policy, data protection, privacy, toolhub privacy",
-	openGraph: {
-		title: "Privacy Policy - ToolHub",
-		description:
-			"Read ToolHub's privacy policy to understand how we protect your data and privacy.",
-		type: "website",
-	},
 };
 
 export default function PrivacyPage() {
@@ -288,7 +283,7 @@ export default function PrivacyPage() {
 									If you have any questions about this Privacy
 									Policy, please contact us through our
 									Contact page or email us at
-									privacy@toolhub.com.
+									{SITE_EMAIL}.
 								</p>
 							</CardContent>
 						</Card>

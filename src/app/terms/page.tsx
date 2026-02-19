@@ -1,19 +1,14 @@
 import type { Metadata } from "next";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { SITE_EMAIL, SITE_NAME } from "@/lib/constant";
 
 export const metadata: Metadata = {
-	title: "Terms of Service - ToolHub",
+	title: `Terms of Service - ${SITE_NAME}`,
 	description:
-		"Read ToolHub's terms of service and conditions for using our online calculators, converters, and utility tools.",
+		`Read ${SITE_NAME}'s terms of service and conditions for using our online calculators, converters, and utility tools.`,
 	keywords:
-		"terms of service, terms and conditions, user agreement, toolhub terms",
-	openGraph: {
-		title: "Terms of Service - ToolHub",
-		description:
-			"Read ToolHub's terms of service and conditions for using our online tools.",
-		type: "website",
-	},
+		"terms of service, terms and conditions, user agreement, terms",
 };
 
 export default function TermsPage() {
@@ -46,7 +41,7 @@ export default function TermsPage() {
 							</CardHeader>
 							<CardContent>
 								<p>
-									By accessing and using ToolHub (&quot;the
+									By accessing and using {SITE_NAME} (&quot;the
 									Service&quot;), you accept and agree to be
 									bound by the terms and provision of this
 									agreement. If you do not agree to abide by
@@ -179,7 +174,7 @@ export default function TermsPage() {
 								<p>
 									The Service and its original content,
 									features, and functionality are and will
-									remain the exclusive property of ToolHub and
+									remain the exclusive property of {SITE_NAME} and
 									its licensors. The Service is protected by
 									copyright, trademark, and other laws. Our
 									trademarks and trade dress may not be used
@@ -350,7 +345,7 @@ export default function TermsPage() {
 									If you have any questions about these Terms
 									of Service, please contact us through our
 									Contact page or email us at
-									legal@toolhub.com.
+								{SITE_EMAIL}
 								</p>
 							</CardContent>
 						</Card>

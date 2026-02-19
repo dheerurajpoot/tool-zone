@@ -2,16 +2,17 @@ import type { Metadata } from "next"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Calculator, Zap, Shield, Users } from "lucide-react"
+import { SITE_NAME } from "@/lib/constant"
 
 export const metadata: Metadata = {
-  title: "About Us - Professional Online Tools | ToolHub",
+  title: `About Us - Professional Online Tools | ${SITE_NAME}`,
   description:
-    "Learn about ToolHub, your trusted source for professional online calculators, converters, and utility tools. Discover our mission to provide accurate, fast, and free tools.",
-  keywords: "about toolhub, online tools, calculators, converters, utilities, professional tools",
+    `Learn about ${SITE_NAME}, your trusted source for professional online calculators, converters, and utility tools. Discover our mission to provide accurate, fast, and free tools.`,
+  keywords: `about, ${SITE_NAME}, online tools, calculators, converters, utilities, professional tools`,
   openGraph: {
-    title: "About ToolHub - Professional Online Tools",
+    title: `About ${SITE_NAME} - Professional Online Tools`,
     description:
-      "Learn about ToolHub, your trusted source for professional online calculators, converters, and utility tools.",
+      `Learn about ${SITE_NAME}, your trusted source for professional online calculators, converters, and utility tools.`,
     type: "website",
   },
 }
@@ -53,14 +54,14 @@ export default function AboutPage() {
         {/* Hero Section */}
         <div className="text-center mb-16">
           <Badge variant="secondary" className="mb-4">
-            About ToolHub
+            About {SITE_NAME}
           </Badge>
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 text-balance">
             Your Trusted Partner for
             <span className="text-blue-600"> Professional Tools</span>
           </h1>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto text-pretty">
-            ToolHub is a comprehensive collection of professional-grade online tools designed to simplify your daily
+            {SITE_NAME} is a comprehensive collection of professional-grade online tools designed to simplify your daily
             calculations, conversions, and utility needs. Built with precision, speed, and user experience in mind.
           </p>
         </div>
@@ -79,7 +80,7 @@ export default function AboutPage() {
 
         {/* Features Section */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-center text-slate-900 mb-12">Why Choose ToolHub?</h2>
+          <h2 className="text-3xl font-bold text-center text-slate-900 mb-12">Why Choose {SITE_NAME}?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow">

@@ -6,6 +6,7 @@ import { Suspense } from "react";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { SITE_AUTHOR, SITE_DESCRIPTION, SITE_TITLE } from "@/lib/constant";
 
 const montserrat = Montserrat({
 	subsets: ["latin"],
@@ -20,27 +21,25 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-	title: "ToolHub - Professional Online Tools Collection",
-	description:
-		"Access 10+ professional online tools including calculators, converters, generators and more. Age calculator, EMI calculator, unit converter, word counter, password generator and many more useful tools.",
+	title: SITE_TITLE,
+	description: SITE_DESCRIPTION,
 	keywords:
 		"online tools, calculator, converter, generator, age calculator, EMI calculator, unit converter, word counter, password generator, case converter, adsense calculator",
-	authors: [{ name: "ToolHub" }],
-	creator: "ToolHub",
-	publisher: "ToolHub",
+	authors: [{ name: SITE_AUTHOR }],
+	creator: SITE_AUTHOR,
+	publisher: SITE_AUTHOR,
 	robots: "index, follow",
 	openGraph: {
-		title: "ToolHub - Professional Online Tools Collection",
-		description:
-			"Access 10+ professional online tools including calculators, converters, generators and more.",
+		title: SITE_TITLE,
+		description:SITE_TITLE,
 		type: "website",
 		locale: "en_US",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "ToolHub - Professional Online Tools Collection",
+		title: SITE_TITLE,
 		description:
-			"Access 10+ professional online tools including calculators, converters, generators and more.",
+			SITE_DESCRIPTION,
 	},
 };
 
@@ -51,7 +50,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en' suppressHydrationWarning>
-			<head>
+			<head suppressHydrationWarning>
 				{/* Search Console Verification */}
 				<meta
 					name='google-site-verification'

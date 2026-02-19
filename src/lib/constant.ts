@@ -1,0 +1,7 @@
+export const SITE_URL = 'https://toolzone.deelzo.com'
+export const SITE_NAME = 'ToolZone'
+export const SITE_TITLE = 'ToolZone - Free Online Tools'
+export const SITE_DESCRIPTION = 'Free online tools for various tasks without losing quality. ToolZone is the best tool for your needs.'
+export const SITE_AUTHOR = 'Deelzo'
+export const SITE_EMAIL = 'evtnorg@gmail.com'
+export const SITE_PHONE = '+1 (682)4640435'

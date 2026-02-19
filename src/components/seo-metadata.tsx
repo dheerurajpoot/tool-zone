@@ -1,3 +1,4 @@
+import { SITE_AUTHOR, SITE_NAME } from "@/lib/constant";
 import type { Metadata } from "next";
 
 interface SEOMetadataProps {
@@ -12,10 +13,8 @@ export function generateSEOMetadata({
 	title,
 	description,
 	keywords,
-	canonical,
-	ogImage = "/og-image.png",
 }: SEOMetadataProps): Metadata {
-	const fullTitle = `${title} | ToolHub - Professional Online Tools`;
+	const fullTitle = `${title} | ${SITE_NAME}`;
 
 	return {
 		title: fullTitle,
@@ -23,9 +22,9 @@ export function generateSEOMetadata({
 		keywords:
 			keywords ||
 			"online tools, calculator, converter, generator, professional tools",
-		authors: [{ name: "ToolHub" }],
-		creator: "ToolHub",
-		publisher: "ToolHub",
+		authors: [{ name: SITE_AUTHOR }],
+		creator: SITE_AUTHOR,
+		publisher: SITE_AUTHOR,
 		robots: "index, follow",
 	};
 }

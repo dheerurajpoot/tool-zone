@@ -2,15 +2,16 @@ import type { Metadata } from "next"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { AlertTriangle } from "lucide-react"
+import { SITE_NAME } from "@/lib/constant"
 
 export const metadata: Metadata = {
-  title: "Disclaimer - ToolHub",
+  title: `Disclaimer - ${SITE_NAME}`,
   description:
-    "Important disclaimer and limitations regarding the use of ToolHub's online calculators, converters, and utility tools.",
+    `Important disclaimer and limitations regarding the use of ${SITE_NAME}'s online calculators, converters, and utility tools.`,
   keywords: "disclaimer, limitations, accuracy, toolhub disclaimer",
   openGraph: {
-    title: "Disclaimer - ToolHub",
-    description: "Important disclaimer and limitations regarding the use of ToolHub's online tools.",
+    title: `Disclaimer - ${SITE_NAME}`,
+    description: `Important disclaimer and limitations regarding the use of ${SITE_NAME}'s online tools.`,
     type: "website",
   },
 }
@@ -41,7 +42,7 @@ export default function DisclaimerPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-amber-700">
-                  The information and tools provided on ToolHub are for general informational and educational purposes
+                  The information and tools provided on {SITE_NAME} are for general informational and educational purposes
                   only. While we strive for accuracy, we make no representations or warranties of any kind, express or
                   implied, about the completeness, accuracy, reliability, suitability, or availability of the
                   information, products, services, or related graphics contained on the website.
